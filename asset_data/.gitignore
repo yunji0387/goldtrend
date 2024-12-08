@@ -1,0 +1,43 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+gold-venv/
+
+# Django-specific
+db.sqlite3
+*.log
+staticfiles/
+media/
+
+# Environment variables
+.env
+
+# VSCode or other IDEs
+.vscode/
+.idea/
+*.swp
+
+# Pytest or Coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+.cache
+nosetests.xml
+coverage.xml
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
