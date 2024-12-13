@@ -26,3 +26,11 @@ class AssetPriceView(APIView):
             return Response(serializer.errors, status=400)
         else:
             return Response({'error': f'Could not retrieve {asset} price data'}, status=500)
+
+class AllAssetPriceView(APIView):
+    def get(self, request):
+        assets = ['XAU', 'XAG', 'BTC', 'ETH']
+        data = {}
+        for asset in assets:
+            data[asset] = get_asset_price(asset)
+        return Response(data)
