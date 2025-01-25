@@ -1,1 +1,1 @@
-web : gunicorn asset_data.wsgi
+web : gunicorn asset_data.wsgi --log-file -
